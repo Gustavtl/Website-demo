@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/76faec6869.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Bilder/Logo/Gustav Lian logo-04.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Hjem</a></li>
+                <li><a href="#about">Om</a></li>
+                <li><a href="#services">Tjenester</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Fotograf og Grafisk Designer</p>
+            <h1>Hei, mitt navn er <span>Gustav</span> <br> Hva kan jeg hjelpe deg med?</h1>
+        </div>
+    </div>
+   </div> 
+   <!-- ----------------Om------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="/Bilder/IMG_portrett videregående 2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="under-tittel">Om meg</h1>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(this, 'ferdigheter')">Ferdigheter</p>
+                    <p class="tab-links" onclick="opentab(this, 'erfaring')">Erfaring</p>
+                    <p class="tab-links" onclick="opentab(this, 'utdanning')">Utdanning</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="ferdigheter">
+                    <ul>
+                        <li><span>Fotografering</span><br>Modellering, bryllup, konfirmasjon og bedrift</li>
+                        <li><span>Video-produksjon</span><br>Filme, klipping og fargebehandling</li>
+                        <li><span>Grafisk identitet</span><br>Lage identitet for deg eller din bedrift</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="erfaring">
+                    <ul>
+                        <li><span>2019 - 2022</span><br>Medier og kommunikasjon vgs</li>
+                        <li><span>2022 - 2024</span><br>Fotograf og grafisk designer for Forsvaret</li>
+                        <li><span>2024 - Nå</span><br>Freelancing</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="utdanning">
+                    <ul>
+                        <li><span>2019-2022</span><br>Medier og kommunkasjon vgs</li>
+                        <li><span>2022-2024</span><br>Fagbrev grafisk design</li>
+                    </ul>
+                </div>
+
+            </div>
+    </div></div>
+</div>
+
+<!-- -------------------- Tjenester --------------------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="under-tittel">Mine tjenester</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Utvikle web-design for deg eller din bedrift. Skape en grafisk identitet som skiller
+                    seg ut, men samtidig bygger tillit i markedet. 
+                </p>
+                <a href="#" class="services__link">Lær mer</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Fotografering</h2>
+                <p>Skape profesjonelle bilder til deg eller din bedrift. Bildene skal fremstå 
+                    tillitsfulle, engasjerte og profesjonelle. Alt dette, for å sørge for at din bedrift 
+                    blir lagt merke til.</p>
+                <a href="#" class="services__link">Lær mer</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Videografi</h2>
+                <p>Jeg tilbyr å lage profesjonell videoproduksjon for deg og din bedrift. 
+                    Video/ene skal vekke oppmerksomhet, og de skal skrike profft. Jeg tar meg av alt ifra 
+                filmingen, klippingen og farge/lydbehandling.</p>
+                <a href="#" class="services__link">Lær mer</a>
+            </div>
+
+        </div>
+    </div>
+ </div>
+ <!-- ---------------------portfolio-------------------- -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="under-tittel">Mitt arbeid</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="/Bilder/Bilder ifra militæret/RED 9490.jpg" alt="bilde av meg">
+                <div class="layer">
+                    <h3>Forsvaret</h3>
+                    <p>Fotografere Forsvarets øvelser, samt produsere grafisk materiell som er av Forsvarets behov</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Bilder/Certina pilot.JPG" alt="bilde av meg">
+                 <div class="layer">
+                    <h3></h3>
+                    <p>Komersielle bilder til reklame. </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Bilder/Bilder ifra militæret/RED 9575.jpg" alt="bilde av meg">
+                 <div class="layer">
+                    <h3>Forsvaret</h3>
+                    <p></p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+             </div>
+             <a href="#" class="btn">Se mer
+            </a>
+    </div>
+  </div>
+<!-- ------------------------------- kontakt ----------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="under-tittel">Kontakt meg</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>gustavlianbusiness.com</p>
+                <p><i class="fa-solid fa-phone"></i>+47 474 47 474</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="" class="btn btn2">Last ned CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="navn" placeholder="Navn" required>
+                <input type="email" name="epost" placeholder="E-post" required>
+                <textarea name="melding" rows="6" placeholder="Din melding"></textarea>
+
+                  <div style="position:absolute; left:-9999px; opacity:0;">
+                <label for="hidden_field">Ikke fyll ut dette feltet</label>
+                <input type="text" name="hidden_field" autocomplete="off" tabindex="-1">
+                </div>
+                
+                <div class="g-recaptcha" data-sitekey="6Lfdw3ErAAAAAI9X9hyaiJJ7ERQOZAiD0yXVoDHy"></div>
+                <button type="submit" class="btn btn2">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Gustav Lian. Alle rettigheter reservert</p>
+    </div>
+</div>
+<script src="index.js">
+    
+</script>
+</body>
+</html>
