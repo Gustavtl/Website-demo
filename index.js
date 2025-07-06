@@ -39,17 +39,7 @@ form.addEventListener('submit', function(e) {
   // Ensure reCAPTCHA is ready
   grecaptcha.ready(function() {
     // Execute reCAPTCHA
-    grecaptcha.execute(siteKey, { action: 'submit' }).then(function(token) {
-      
-      // Check if the reCAPTCHA input already exists; if not, create it
-      let recaptchaInput = form.querySelector('input[name="g-recaptcha-response"]');
-      if (!recaptchaInput) {
-        recaptchaInput = document.createElement('input');
-        recaptchaInput.type = 'hidden';
-        recaptchaInput.name = 'g-recaptcha-response';
-        form.appendChild(recaptchaInput);  // Append hidden input to form
-      }
-      recaptchaInput.value = token;  // Assign the generated token to the input
+    
 
       // Now submit the form with the token
       fetch(scriptURL, {
