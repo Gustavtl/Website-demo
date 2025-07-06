@@ -9,6 +9,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.grecaptcha-badge {
+  z-index: 9999;
+  bottom: 10px !important;
+  right: 10px !important;
+  visibility: visible !important;
+}
+
 body {
     background: #080808;
     color: #fff;
